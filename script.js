@@ -102,8 +102,7 @@ window.onload = function () {
         stopIntervalo()
     });
 
-    document.onkeydown = checkKey;
-
+    //Detecció de tecles
     function checkKey(e) {
         e = e || window.event;
 
@@ -119,13 +118,10 @@ window.onload = function () {
                 playIntervalo()
                 playrunning = true;
             }
-
         }
-
     }
-
 
     // Iniciar
     renderizarImagen();
-
+    document.onkeydown = checkKey;
 }

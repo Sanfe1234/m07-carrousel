@@ -5,7 +5,7 @@
 
 body {
     padding: 20px 50px;
-    font-family: Calibri;
+    font-family: Calibri, serif;
 }
 
 .carousel {
@@ -19,5 +19,9 @@ body {
     height: 400px;
     object-fit: cover;
     background-size: cover;
+}
+
+button {
+    padding: 5px 15px;
 }
 
