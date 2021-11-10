@@ -15,6 +15,7 @@ window.onload = function () {
     let $imagen = document.getElementById("imagen");
     let $botonPlay = document.getElementById("play");
     let $botonStop = document.getElementById("stop");
+    let $imgName = document.getElementById("name");
 
     // Identificador del proceso que se ejecuta con setInterval().
     let intervalo;
@@ -121,7 +122,17 @@ window.onload = function () {
         }
     }
 
+    //Div segueix el ratolí
+    let circle = document.getElementById('circle');
+    const onMouseMove = (e) => {
+        circle.style.left = e.pageX + 'px';
+        circle.style.top = e.pageY + 'px';
+    }
+    document.addEventListener('mousemove', onMouseMove);
+
     // Iniciar
     renderizarImagen();
     document.onkeydown = checkKey;
+
+
 }
